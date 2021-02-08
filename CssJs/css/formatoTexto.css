@@ -1,0 +1,117 @@
+/*reset*/
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, variable, address, form, fieldset, blockquote{
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    font-weight: normal;
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td, th, caption{
+    font-weight: normal;
+    text-align: left;
+}
+
+img, fieldset{
+    border: 0;
+}
+
+ol{
+    margin-left: 1.4em;
+    list-style: decimal;
+}
+
+ul{
+    margin-left: 1.4em;
+    list-style: square;
+}
+
+q:before, q:after {
+    content: '';
+}
+/*finaliza reset*/
+
+body{
+    color: #003;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 62%;  
+    background: #09f /*ur(./img/imagen.png) repeat-x*/;  
+}
+
+#idPrincipal{
+    width: 740px;
+    margin: auto;
+    border: 4px solid #FFF;
+    padding: 0 10px;
+    /*background: ur(./img/imagen.png) no-repeat*/;
+}
+
+#idPrincipal h1{
+    color: #f30;
+    font-family: 'Arial Black', Arial, Helvetica, sans-serif;
+    font-size: 4em;
+}
+
+#idPrincipal h1 strong{
+    font-size: 150px;
+    color: #fff;
+    margin-right: -0.90em;
+}
+
+#idPrincipal h2{
+    font: bold 3.5em 'Hoefler Text', Garamond, Times, serif;
+    border-bottom: 1px solid #000;
+    margin-top: 25px;
+}
+
+#idPrincipal h3{
+    color: #f30;
+    font-size: 1.9em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+#idPrincipal p{
+    font-size: 1.5em;
+    line-height: 150%;
+    margin-left: 150px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+}
+
+/*Psudo clase que pinta la primera liena del parrafo*/
+#idPrincipal p:first-line{
+    font-weight: bold;
+    color: #666;
+}
+
+#idPrincipal ul{
+    margin: 50px 0 25px 50px;  /*Esta propiedaas se aplican en sentido de las manecilals del reloj*/
+    width: 160px;
+    float: right;
+}
+
+#idPrincipal li{
+    color: #06c;
+    font-size: 1.5em;
+    margin-bottom: 7px;
+}
+
+#idPrincipal .autor{
+    font-size: 1.6em;
+    margin: 5px 0px 25px 50px;
+
+}
+
+#idPrincipal .autor strong{
+    color: #f00;
+    text-transform: uppercase;
+    margin-left: 5px;
+}
+

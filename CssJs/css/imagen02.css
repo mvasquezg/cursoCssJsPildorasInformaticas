@@ -1,0 +1,111 @@
+/*reset*/
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, variable, address, form, fieldset, strong, blockquote{
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    font-weight: normal;
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td, th, caption{
+    font-weight: normal;
+    text-align: left;
+}
+
+img, fieldset{
+    border: 0;
+}
+
+ol{
+    margin-left: 1.4em;
+    list-style: decimal;
+}
+
+ul{
+    margin-left: 1.4em;
+    list-style: square;
+}
+
+q:before, q:after {
+    content: '';
+}
+/*finaliza reset*/
+
+body{
+    font-size: 62.5%;
+}
+
+#idContenido{
+    margin-left: 15px;
+    margin-top: 15px;
+    border: 1px dashed #999;
+    border-right: none;
+    border-bottom: none;
+}
+
+#idGaleria .figura p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    text-align: center;
+    line-height: normal;
+}
+
+h1{
+    font: normal 2.4em Verdana, Arial, Helvetica, sans-serif;
+    margin: 0;
+    border-bottom: 1px dashed #999;
+    padding: 5px 0 5px 8px;
+    color: #14556b;
+}
+
+p{
+    font: 1.6em/160% Georgia, 'Times New Roman', Times, serif;
+    margin: 10px 8px;
+}
+
+.figura{
+    float: left;
+    width: 210px;
+    margin: 0 10px 10px 10px;
+}
+
+.figura img{
+    border: 1px solid #666;
+    padding: 10px;
+    width: 200px;
+    margin: 15px 10px 5px 10px;
+}
+
+.figura p{
+    font: bold 1em Verdana, Geneva, sans-serif;
+    color: #333;
+    text-align: center;
+    background-color: #3fc;
+    border: 1px dashed #666;
+    padding: 5px;
+}
+
+.foto img{
+    border: 1px solid #666;
+    background-color: #ccc;
+    padding: 5px;
+
+    position: relative;
+    top: -5px;
+    left: -5px;
+
+}
+
+.figura p{
+    font: 1.1em Arial;
+    margin: 10px 0 0 0;
+    height: 5em;
+}
+
+.foto{
+    background-color: #00f;
+}

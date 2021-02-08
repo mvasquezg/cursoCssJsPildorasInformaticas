@@ -1,0 +1,82 @@
+/*a[href^="http://"]{
+    color: #f00;
+    font-size: 24px;
+}
+
+a[href$=".pdf"]{
+    color: #3c0;
+    font-size: 54px;
+}*/
+
+
+/*Selectores Hijos
+ul :first-child{
+    color: #00f;
+    font-weight: bold;
+}
+
+ul :last-child{
+    color: #f00;
+}
+
+/*ol :nth-child(3n+2){
+    color: #090;
+}*/
+
+/*ol :nth-child(odd){
+    color: #090;
+}*/
+
+/*ol :nth-child(even){
+    color: #090;
+}
+
+ol :nth-child(4n+1){
+    color: #090;
+}*/
+
+
+/*Selectores de tipo
+
+#idInicio{
+    background-color: #cf9;
+    width: 350px;
+}
+
+/*#idInicio p:first-of-type{
+    color: #00f;
+    font-weight: bold;
+}
+
+#idInicio p:last-of-type{
+    color: #f00;
+    font-weight: bold;
+    border-bottom: dotted #03c 5px;
+}
+
+#idInicio p:nth-of-type(2n+1){/*odd even
+    color: #f00;
+    font-weight: bold;
+    border-bottom: dotted #03c 5px;
+}*/
+
+/*OPacidad
+img {
+    opacity: .5;
+}
+
+img:hover{
+    opacity: 1;
+}
+
+body{
+    background-color: rgba(95, 156, 140, .1);
+}*/
+
+/*Sombras*/
+
+h1{
+    margin: auto;
+    width: 500px;
+    text-shadow: -4px 4px 3px #999;
+}

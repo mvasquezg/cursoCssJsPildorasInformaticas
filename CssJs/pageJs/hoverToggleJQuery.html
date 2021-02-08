@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hover y Toggle JQuery</title>
+    <link rel="stylesheet" href="../css/hoverToogleJQuery.css">
+    <script src="../Jquery/jquery-1.11.1.js"></script>
+
+    <script>
+       $(document).ready(
+            function(){
+
+                $("#idSubmenu").hide();
+
+                $("#idArchivo").on("click",
+                    function(){
+                        $("#idSubmenu").toggle();
+                    }
+                );
+
+                $("#idItem01").click(
+                    function(){
+                        alert("Hola mundo");
+                    }
+                );
+            }//end function anonima
+        );//end documenteReady      
+    </script>
+
+
+</head>
+
+    <body>
+        <!--<div id="idMensajeImg01">
+            shdlshdasdhdhasdhalksdhashdhkhkdashkdhklsdkhl.......
+        </div>
+
+        <div id="idImagenes">
+            <img src="../img/linux.jpg" id="idImg01" alt="Imagen Linux Prueba" width="200" height="175" />
+            <img src="../img/linux01.jpg" id="idImg02" alt="Imagen Linux 02" width="200" height="175" />
+            <img src="../img/linux02.jpg" id="idImg03" alt="Imagen Linux 03" width="200" height="175" />
+            <img src="../img/linux03.jpg" id="idImg04" alt="Imagen Linux 04" width="200" height="175" />
+         </div>-->
+
+         <div id="idSubmenu">
+            <ul>
+                <li id="idItem01">
+                    <a href="#">Opcion 1</a>
+                </li>
+                <li id="idItem02">
+                    <a href="#">Opcion 2</a>
+                </li>
+                <li id="idItem03">
+                    <a href="#">Opcion 3</a>
+                </li>
+            </ul>
+         </div>
+
+         <div id="idMenuPrincipal">
+            <ul>
+                <li id="idArchivo">
+                    <a href="#">Archivo</a>
+                </li>
+                <li>
+                    <a href="#">Edicion</a>
+                </li>
+                <li>
+                    <a href="#">Herramienta</a>
+                </li>
+            </ul>
+         </div>
+
+
+    </body>
+</html>

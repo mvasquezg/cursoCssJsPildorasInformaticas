@@ -1,0 +1,101 @@
+@charset "utf-8";
+
+/*h1{
+    text-align: center;
+    color: #00f;
+}
+
+body{
+    background-color: #f96;
+}
+
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #0f0;
+    font-size: 18px;
+}*/
+
+/*Inicia Selectores de etiqueta
+    p{
+        color: #f00;
+        font-style: italic;
+        font-weight: bold;
+    }
+
+    /*h2{
+        color: blue;
+        font-size: 2em;
+    }
+Finaliza Selectores de etiqueta
+
+Inicia Selectores de clase
+    .estiloPrueba{
+        color: #063;
+        font-size: 26px;
+    }
+Finaliza Selectores de clase*/
+
+/*Inicia Selectores de ID
+    #tabla{
+        background-color: #00f;
+        border-color: #f00;   
+    }
+/*Finaliza Selectores de ID
+
+/*Inicia Selectores de grupo
+    h1, h2, address{
+        color: #00f;
+    }
+/*Finaliza Selectores de grupo*/
+
+/*Inicia Selector universal
+*{
+    color: #00f;
+}
+/*Finaliza Selector univerzal*/
+
+/*Inicia estilos descencientes
+    li a{
+        color: #f00;    
+    }
+
+    li a strong{
+        color: #0f0;
+    }
+
+    .destacado{
+        font-size: 24px;
+        color: #F0F;
+    }
+
+    strong .destacado{
+        text-decoration: underline;
+    }
+Finaliza estilos descencientes*/
+
+/*Inicia estilos vinculos --Pseudos clases o pseudo elemntos*/
+    a:link{
+        color: #f00;
+        text-decoration: none;
+    }    
+
+    a:visited {
+        color: #0f0;
+    }
+
+    a:hover{
+        color: #ff0;
+        text-decoration: underline;
+    }
+
+    a:active{
+        color: #c0c;
+    }
+
+    p:hover{
+        color: #f00;
+    }
+    
+
+/*Finaliza estilos vinculos --Pseudos clases o pseudo elemntos*/
+

@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<script src="../Jquery/jquery-1.6.3.min.js"></script>
+<script>
+
+	$(document).ready(
+		function() {
+			
+			var fotoNueva=new Image();
+
+			fotoNueva.src="../img/linux01.jpg";
+
+
+			$("#foto").hover(function(){
+				console.log("ruta de la foto"+fotoNueva.src);
+				//$(this).attr("src","../img/linux01.jpg");
+				$(this).attr("src",fotoNueva.src);
+			},
+
+
+
+			function(){
+			
+				$(this).attr("src","../img/linux02.jpg");	
+			});	
+		
+    });
+
+
+</script>
+</head>
+
+<body>
+
+<img src="../img/linux02.jpg" width="300" height="200" id="foto">
+</body>
+</html>

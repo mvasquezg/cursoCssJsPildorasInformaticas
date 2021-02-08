@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Numero Aleatorio</title>
+
+</head>
+
+<body>
+    <label></label><input type="text" id="idMensaje"/>
+    <label></label><input type="text" id="idIntentos"/>
+</body>
+<script>
+    var numeroAleatorio=Math.round(Math.random()*100);
+    var numero=0, intentos=0;
+    var idMensaje = document.getElementById("idMensaje");
+    var idIntentos = document.getElementById("idIntentos");
+
+    do{
+        intentos++;
+        numero =prompt("Introduce un numero entre cero y 100");
+
+        if(numeroAleatorio>numero){
+            //alert("El numero es mas alto");
+            //document.write("El numero es mas alto" + "<br/>");
+            idMensaje.value = "El numero es mas alto";
+            idMensaje.style.fontSize = "18px";
+
+        }
+
+        if(numeroAleatorio<numero){
+            /*document.write("El numero es mas bajo"+ "<br/>");*/
+            /*alert("El numero es mas bajo");*/
+            idMensaje.value = "El numero es mas bajo";
+            idMensaje.style.fontSize = "18px";
+        }
+
+        idIntentos.value = intentos;
+        idIntentos.style.fontSize = "18px";
+        idIntentos.style.color = "red";
+        idIntentos.style.textAlign ="center";
+    }while(numero!=numeroAleatorio);
+
+    /*alert("Correcto lo has logrado en: "+intentos+" intentos");*/
+    //document.write("Correcto lo has logrado en: "+intentos+" intentos");
+    idMensaje.value="Correcto";
+    idMensaje.style.color="red";
+</script>
+
+</html>

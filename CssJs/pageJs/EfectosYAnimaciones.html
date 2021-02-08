@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Efectos y Animaciones</title>
+    <link rel="stylesheet" href="../css/efectoYAnimaciones.css">
+    <script src="../Jquery/jquery-1.6.3.min.js"></script>
+
+    <script>
+       
+        /*$(document).ready(
+            function(){
+                /*$("#abierto").click(
+                    function(){
+                        //$("#login form").slideToggle(300);
+                        //$("#login form").fadeToggle(300);
+                        $("#login form").toggle(300);
+                        $(this).toggleClass("cerrado");
+                    }
+                );//
+
+                $("#abierto").toggle(
+                    function(){
+                        $("#login form").slideDown(300);
+                        $(this).addClass("cerrado");
+                    },
+
+                    function(){
+                        $("#login form").fadeOut(600);
+                        $(this).removeClass("cerrado");
+                    }
+                );    
+
+
+            }//end function anonima
+        );//end documenteReady*/
+
+        $(document).ready(
+            function(){
+                   
+               /*$("#idImagenCoche").click(
+                    function(){
+                       $(this).animate(
+                           {
+                               marginLeft:"+=150px"
+
+                           },
+                           500 //tiempo de ejecucion
+                       ); 
+                    }
+
+               ); */
+
+
+                $("img").mouseover(
+                    function(){
+                        $(this).animate(
+                            {
+                                opacity:1
+                            }, 
+                            250
+                        );
+                    }
+                );
+
+                $("img").mouseout(
+                    function(){
+                        $(this).animate(
+                            {
+                                opacity:0.5
+                            }, 
+                            250
+                        );
+                    }
+                ); 
+
+
+            }//end function anonima
+        );//end documenteReady
+
+    </script>
+
+
+</head>
+
+    <body>
+       <!-- <img src="../img/coche.jpg" width="390" id="idImagenCoche"/>-->
+       <img src="../img/linux.jpg" width="390" id="idImagenCoche"/>
+       
+    </body>
+</html>

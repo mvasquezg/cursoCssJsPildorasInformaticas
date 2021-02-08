@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Atributos CSS Jquery</title>
+    <link rel="stylesheet" href="../css/atributosCssJquery.css">
+    <script src="../Jquery/jquery-1.11.1.js"></script>
+        
+    <script>
+        /*     $(document).ready(
+            function(){
+                //    $("a[href^='http://']").addClass("linkDestacaCursos");
+
+                document.getElementById("idBtnCursos").addEventListener("click", resaltarCursos, false);
+                document.getElementById("idBtnInformacion").addEventListener("click", resaltarInformacion, false);
+            }
+        ); 
+
+        function resaltarCursos(){
+            $(".ejemplos").removeClass("linkDestacaCursos");
+            
+            $(".cursos").addClass("linkDestacaCursos");
+
+            /*$(".cursos").toggleClass("linkDestacaCursos");
+
+        }    
+
+        
+        function resaltarInformacion(){
+            $(".cursos").removeClass("linkDestacaCursos");
+
+            $(".ejemplos").addClass("linkDestacaCursos");
+            
+            /*$(".ejemplos").toggleClass("linkDestacaCursos");*
+        }*/    
+
+
+        $(document).ready(
+                function(){
+                    ///var colorFondo=$("#idPrimerParrafo").css("background-color");
+
+                    //alert(colorFondo);
+
+                    //$("#idPrimerParrafo").css("background-color", "#00f");
+                    
+                    $("p.destacado").css("border", "2px dotted blue");
+                }
+        );
+    </script>
+
+
+</head>
+
+<body>
+    
+    <!--<div id="idLinks">
+        <a href="http://www.pildorasinformaticas.com" target="_blank" class="cursos">Pilidoras informaticas</a>
+        <p></p>
+        <a href="http://www.google.com"  class="ejemplos" target="_blank">google</a>
+        <p></p>
+        <a href="https://www.youtube.com/user/pildorasinformaticas" target="_blank" class="cursos">Pilidoras informaticas Youtube</a>
+        <p></p>
+        <a href="../pageJs/arrays.html" target="_blank">Arrays JS</a>
+        <p></p>
+        <a href="https://www.google..es" target="_blank" class="ejemplos">Noticias google</a>
+        <p></p>
+        <a href="../pageJs/calculadoraArcaica.html" target="_blank" >Arrays JS</a>
+        <p></p>
+    </div>
+
+    <table>
+        <tr>
+            <td>
+                --Cursos destacados&nbsp;&nbsp;<input type="button" value="Cursos" id="idBtnCursos" />--
+                --Cursos destacados&nbsp;&nbsp;<input type="checkbox" value="Cursos" id="idBtnCursos" />--
+                Cursos destacados&nbsp;&nbsp;<input type="radio" name="btnPrueba" value="Cursos" id="idBtnCursos" />
+
+
+            </td>
+            <td>
+                --Informacion adicional&nbsp;&nbsp;<input type="button" value="Informacion" id="idBtnInformacion" />
+                Informacion adicional&nbsp;&nbsp;<input type="checkbox" value="Informacion" id="idBtnInformacion" />--
+                Informacion adicional&nbsp;&nbsp;<input type="radio" name="btnPrueba" value="Informacion" id="idBtnInformacion" />
+            </td>
+        </tr>
+    </table>-->
+
+    <p id="idPrimerParrafo">
+        primer parrafo
+    </p>
+    <p class="destacado">
+        segundo parrafo
+    </p>
+    <p >
+        tercer parrafo
+    </p>
+</body>
+
+</html>

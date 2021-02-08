@@ -1,0 +1,68 @@
+/* reset css */
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    font-weight: normal;
+   }
+   table { border-collapse: collapse; border-spacing: 0; }
+   td, th, caption { font-weight: normal; text-align: left; }
+   img, fieldset { border: 0; }
+   ol { padding-left: 1.4em; list-style: decimal; }
+   ul { padding-left: 1.4em; list-style:square; }
+   q:before, q:after { content:''; }
+   /* final reset */
+   
+   
+   body {
+       font: 62.5% Verdana, Arial, Helvetica, sans-serif;
+       padding: 20px;
+   }
+
+   #barra{
+       margin: 0;
+       padding: 0;
+       list-style: none;
+       /*width: 185px;*/
+       /*border-bottom: 2px dashed #999;*/
+       border-left: 2px dashed #999;
+       overflow: hidden;
+   }
+
+   #barra a{
+       color: #000;
+       font-size: 11px;
+       text-transform: uppercase;
+       text-decoration: none;
+       border: 2px dashed #999;
+       padding: 5px 2px;
+       display: block;
+       background-color: #e7e7e7;
+       background-image: url(../img/fondolink.png);
+       background-repeat: no-repeat;
+       background-position: 0 2px;
+       padding: 7px 5px 7px 30px;
+
+       /*border-bottom: none;*/
+       border-left: none;
+       
+   }
+
+   #barra a:hover{
+       font-weight: bold;
+       background-color: #07f5f7;
+       background-position: 3px 50%;
+   }
+
+   #inicio #idPosicion{
+       background-color: #fff;
+       background-position: 97% 100%;
+   }
+
+   #barra li{
+    float: left;
+    width: 12em;
+   }/**/
+
+
+

@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bucle For</title>
+    <script>
+        /*for(var i=0; i<10; i++){
+            alert((i+1)+".-Hola mundo");
+        }*/
+
+        /*for(var i=0; i<20; i+=2){
+            alert((i)+".-Hola mundo");
+        }*/
+
+        /*for(var i=10; i>0; i--){
+            alert((i)+".-Hola mundo");
+        }*/
+
+        //document.write(arrayMeses[0]+"<br/>");
+
+        /*var arrayMeses=["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+        
+        for(var i=0; i<12; i++ ){
+            document.write(arrayMeses[i]+"<br/>");     
+        }*/
+
+        /*var arrayMeses=["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+
+        for(var i=0; i<arrayMeses.length; i++ ){
+            document.write(arrayMeses[i]+"<br/>");     
+        }*/
+
+        var arrayTrabajadores= new Array();
+
+        var persona="";
+
+        var contador=0;
+
+        while(persona!="salir"){
+            persona=prompt("Introduce el nombre del trabajador: ");
+            arrayTrabajadores[contador] = persona;
+            contador++;
+        }
+
+        arrayTrabajadores.pop();
+
+        for(var i=0; i<arrayTrabajadores.length; i++){
+            document.write(arrayTrabajadores[i]+"<br/>");
+        }
+
+
+
+
+
+
+
+
+        
+
+        
+        
+    
+    </script>
+</head>
+
+<body>
+    
+</body>
+
+
+</html>

@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Nocticas Jquery CSS</title>
+    <link rel="stylesheet" href="../css/htmlJquery.css">
+    <script src="../Jquery/jquery-1.11.1.js"></script>
+
+    <script>
+      /*  $(document).ready(
+            function(){
+                idImg01.addEventListener("mouseover", cambiarElemento, false);
+                idImg01.addEventListener("mouseout", restaurarElemento, false);                
+            }
+        );
+
+        function cambiarElemento(){
+            $("#idImg01").attr("src", "../img/linux05.jpg")
+        }
+
+        function restaurarElemento(){
+            $("#idImg01").attr("src", "../img/linux01.jpg")
+        }*/
+
+        $(document).ready(
+            function(){
+                var arrayImagenes=document.querySelectorAll("img");
+
+                for(var i=0; i<arrayImagenes.length; i++){
+                       arrayImagenes[i].addEventListener("mouseover", cambiarImagen, false); 
+
+                       arrayImagenes[i].addEventListener("mouseout", restablecerImagen, false); 
+                }
+                
+            }
+        );
+
+        function cambiarImagen(e){
+            
+            if(e.target==idImg01){  
+                $("#idImg01").attr("src", "../img/linux.jpg")
+            }else if(e.target==idImg02){
+                $("#idImg02").attr("src", "../img/linux03.jpg")
+            }else if(e.target==idImg03){
+                $("#idImg03").attr("src", "../img/linux04.jpg")
+            }else if(e.target==idImg04){
+                $("#idImg04").attr("src", "../img/linux05.jpg")
+            }
+        }
+
+        function restablecerImagen(e){
+            
+            if(e.target==idImg01){  
+                $("#idImg01").attr("src", "../img/linux01.jpg")
+            }else if(e.target==idImg02){
+                $("#idImg02").attr("src", "../img/linux02.jpg")
+            }else if(e.target==idImg03){
+                $("#idImg03").attr("src", "../img/linux03.jpg")
+            }else if(e.target==idImg04){
+                $("#idImg04").attr("src", "../img/linux04.jpg")
+            }
+        }    
+    </script>
+
+
+</head>
+
+    <body>
+        <h1>Galeria de imagenes</h1>
+        <table>
+            <tr>
+                <td>
+                    <img src="../img/linux01.jpg" id="idImg01"/>
+                </td>
+                <td>
+                    <img src="../img/linux02.jpg" id="idImg02"/>
+                </td>
+                <td>
+                    <img src="../img/linux03.jpg" id="idImg03"/>
+                </td>
+                <td>
+                    <img src="../img/linux04.jpg" id="idImg04"/>
+                </td>
+            </tr>
+        </table>
+        
+       
+    </body>
+
+</html>

@@ -1,0 +1,32 @@
+h1{
+    text-align: center;
+}
+
+p{
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+}
+
+#idLink{
+    width: 20%;
+    margin-left: 45%;
+    border: dashed #000fff 2px;
+    float: left;
+    padding-bottom: 200px;
+    padding-left: 20px;
+}
+
+#idLink h2{
+    text-align: center;
+}
+
+#idUltimo{
+    width: 75%;
+    float: left;
+}
+
+li{
+    font-weight: bold;
+    font-size: 18px;
+}

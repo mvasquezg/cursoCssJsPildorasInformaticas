@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ventanas Emergentes 01</title>
+
+<script src="../Jquery/jquery-1.6.3.min.js"></script>
+
+<!--<link rel="stylesheet" href="../css/site.css">
+<link rel="stylesheet" href="../fancybox/jquery.fancybox-1.3.4.css">
+<script src="../fancybox/jquery.fancybox-1.3.4.js"></script>-->
+
+
+<script>
+
+
+  	$(document).ready(
+		
+  		function() {
+			$("#idForm01").hide();
+
+			$("#idVinculo").click(
+				function(e){
+					$("#idForm01").fadeIn(1000);
+				//	e.preventDefault();
+				return false;
+				}
+			);//end vinciloClick
+		}//end funcion anonma
+	);//end documente ready
+
+
+</script>
+</head>
+
+<body>
+	<a href="www.google.com" id="idVinculo">
+		Haz login
+	</a>
+	<form action="" name="form01" id="idForm01">
+		<label>
+			Nombre: 
+		</label>
+		<input type="text" id="idNombre"/>
+	
+		<label>
+			Password: 
+		</label>
+		<input type="text" id="idNombre"/>
+		<input type="button" id="idBtnEnviar" value="Enviar">
+	</form>
+	
+</body>
+</html>

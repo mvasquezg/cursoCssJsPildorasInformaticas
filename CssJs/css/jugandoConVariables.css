@@ -1,0 +1,21 @@
+body{
+    background-color: #a246bc;
+}
+
+
+.contenido{
+    padding: 0;
+    margin-left: 50px;
+    border-bottom: 2px solid #f35acb;
+}
+
+.principal h1{
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-left: 50px;
+    padding: 0;
+    border-bottom: 2px solid #f35acb;
+    width: 50%;
+}
+

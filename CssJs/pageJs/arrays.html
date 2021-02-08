@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!--<title>Conceptos con pildoras informaticas</title>-->
+    <!--<title>Juagando con arrays</title>-->
+    <title>Estructuras de control</title>
+
+    <script>
+        var precioCoche = 60000;
+        
+        var dineroAhorrado = prompt("Introduce tu ahorro: ");
+        /*var edad=prompt("Ingresas tu edad");*/
+        var loteria=prompt("te ha tocado la loteria");
+
+
+       /* if(dineroAhorrado>=precioCoche && edad>=18){
+            alert("Puedes comprar el coche");
+        }else{
+            alert("No puedes comprar el coche.");
+        }*/
+
+        if(dineroAhorrado>=precioCoche || loteria=="si"){
+            alert("Puedes comprar el coche");   
+        }else{
+            alert("No puedes comprar el coche.");
+        }
+
+        alert("Continuamos con la ejecucion del programa");
+
+    </script>
+</head>
+
+<body>
+
+    <!--<div class="contendor">
+        <div class="header">
+            <p class="logo">Variables JS ARRAYS</p>
+        </div>--
+        <div class="contenido">
+            <div class="principal">
+                <h1>Jugando arrays</h1>
+                <script>
+                    document.write("<p> El primer articulo es: <strong>");
+                    document.write(arrayArticulos[0]+"</strong></p>");
+                    
+                    document.write("<p> El ultimo articulo es: <strong>");
+                    document.write(arrayArticulos[arrayArticulos.length-1]+"</strong></p>");
+                    
+                    arrayArticulos.unshift("balon");
+
+                    document.write("<p> casi nos olvidamos!! agregamos este elemento: <strong>");
+                    document.write(arrayArticulos[0]+"</strong></p>");
+                   
+                    document.write("<p> agreguemos iun elemento al final: <strong>");
+                    arrayArticulos.push(prompt("Introduce el articulo"));
+                    document.write(arrayArticulos[arrayArticulos.length-1]+"</strong></p>");
+                    
+                    document.write("<p>"+arrayArticulos[0] + "<br/>");
+                    document.write(arrayArticulos[1] + "<br/>");
+                    document.write(arrayArticulos[2] + "<br/>");
+                    document.write(arrayArticulos[3] + "<br/>");
+                    document.write(arrayArticulos[4] + "<br/>");
+                    document.write(arrayArticulos[5] + "<br/></p>");
+
+                    alert ("Borarremos el primer elemnto");
+
+                    arrayArticulos.shift();
+
+                    document.write("<p>"+arrayArticulos[0] + "<br/>");
+                    document.write(arrayArticulos[1] + "<br/>");
+                    document.write(arrayArticulos[2] + "<br/>");
+                    document.write(arrayArticulos[3] + "<br/>");
+                    document.write(arrayArticulos[4] + "<br/></p>");
+                    
+
+                    alert ("ahora Borarremos el ultimo elemnto");
+
+                    arrayArticulos.pop();
+
+                    document.write("<p>"+arrayArticulos[0] + "<br/>");
+                    document.write(arrayArticulos[1] + "<br/>");
+                    document.write(arrayArticulos[2] + "<br/>");
+                    document.write(arrayArticulos[3] + "<br/></p>");
+
+                    
+
+                    
+                    //alert(arrayArticulos.length);
+                </script>
+                
+            </div>
+        </div>    
+    </div>-->
+
+    <!--<h1>Practica de objetos</h1>
+    <input type="button" id="idBtn01"/>
+    <input type="button" id="idBtn02"/>
+    <input type="text" id="idInText01"/>-->
+     
+    <h1>Estructuras de control</h1>
+
+
+</body>
+<!--<script>
+    //var arrayArticulos=["Zapatillas", "Camisetas", "Pantalon", "Calcetines"];
+    
+    //var arrayArticulos=new Array("Zapatillas", "Camisetas", "Pantalon", "Calcetines");
+
+    //var arrayArticulos=[];
+
+    var btnBoton01 = document.getElementById("idBtn01");
+    var btnBoton02 = document.getElementById("idBtn02");
+    var inText01 = document.getElementById("idInText01");
+
+    
+    btnBoton01.style.width="250px";
+
+    btnBoton01.style.height="250px";
+
+    //btnBoton01.style.backgroundColor="#0cf";
+
+    btnBoton02.style.width="250px";
+
+    btnBoton02.style.height="250px";
+
+    //btnBoton02.style.backgroundColor="#0cf";
+    
+    btnBoton02.focus();
+
+    inText01.style.backgroundColor="#f00";
+    inText01.style.height="200px";
+
+    inText01.value = "Escriba aqui";
+
+
+</script>-->
+
+</html>

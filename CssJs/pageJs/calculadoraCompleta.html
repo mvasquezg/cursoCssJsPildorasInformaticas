@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora Completa</title>
+    <link href="../css/calculadora.css" rel="stylesheet"/> 
+    
+    <script>
+        var cantidad="";
+        var acumulado=0;
+        var suma=false, resta=false;
+
+        function mostrarNumeros(numero){
+            document.getElementById("idDisplay").value=cantidad+numero;
+            cantidad=document.getElementById("idDisplay").value
+        }
+
+        function sumar(){
+            acumulado = acumulado+parseInt(cantidad);
+
+            idDisplay.value = acumulado;
+
+            cantidad="";
+            suma = true;
+        }
+
+        function restar(){
+            if(suma){
+                acumulado = acumulado+parseInt(cantidad);
+                idDisplay.value = acumulado;
+            }else{
+          
+               acumulado = acumulado-parseInt(cantidad);
+
+                idDisplay.value = acumulado;
+            }
+            cantidad="";
+            suma = false;
+            resta = true;
+        }
+
+        function mostrarResultado(){
+            if(suma){
+                idDisplay.value=acumulado + parseInt(cantidad);
+            }else if(resta){
+                idDisplay.value=acumulado - parseInt(cantidad);
+            }
+
+            acumulado=parseInt(idDisplay.value);
+            cifra=0;
+        }//end mostrarResultado
+
+        
+       
+    </script>
+</head>
+
+<body >
+
+</body>
+    <table width="15%" border="1">
+        <tr>
+            <td colspan="4" align="center">
+                <input type="text" class="colorDisplay" id="idDisplay" size="25"/>
+            </td>
+        </tr>
+
+        <tr>
+            <td width="26%" >
+                <input type="button" class="numero" id="idBtnAdd" value="+" onclick="sumar();"/>
+            </td>
+            <td width="21%" >
+                <input type="button" class="numero" id="idBtnRest" value="-" onclick="restar();"/>
+            </td>
+            <td width="21%" >
+                <input type="button" class="numero" id="idBtnMult" value="*"/>
+            </td>
+            <td width="26%" >
+                <input type="button" class="numero" id="idBtnDiv" value="/"/>
+            </td>
+        </tr>
+        
+        <tr>
+            <td  >
+                <input type="button" class="numero" id="idBtn7" value="7" onclick="mostrarNumeros(7);"/>
+            </td>
+            <td >
+                <input type="button" class="numero" id="idBtn8" value="8" onclick="mostrarNumeros(8);"/>
+            </td>
+            <td >
+                <input type="button" class="numero" id="idBtn9" value="9" onclick="mostrarNumeros(9);"/>
+            </td>
+            <td >
+                &nbsp;
+            </td>
+        </tr>
+        
+        <tr>
+            <td  >
+                <input type="button" class="numero" id="idBtn4" value="4" onclick="mostrarNumeros(5);"/>
+            </td>
+            <td >
+                <input type="button" class="numero" id="idBtn5" value="5" onclick="mostrarNumeros(5);"/>
+            </td>
+            <td >
+                <input type="button" class="numero" id="idBtn6" value="6" onclick="mostrarNumeros(6);"/>
+            </td>
+            <td >
+                &nbsp;
+            </td>
+        </tr>
+
+        <tr>
+            <td  >
+                <input type="button" class="numero" id="idBtn1" value="1" onclick="mostrarNumeros(1);"/>
+            </td>
+            <td >
+                <input type="button" class="numero" id="idBtn2" value="2" onclick="mostrarNumeros(2);"/>
+            </td>
+            <td >
+                <input type="button" class="numero" id="idBtn3" value="3" onclick="mostrarNumeros(3);"/>
+            </td>
+            <td >
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td  >
+                <input type="button" class="numero" id="idBtn0" value="0" onclick="mostrarNumeros(0);"/>
+            </td>
+            <td >
+                <input type="button" class="numero" id="idBtnDot" value="."/>
+            </td>
+            <td colspan="2">
+                <input type="button" class="numero" id="idBtnIgual" value="=" onclick="mostrarResultado();"/>
+            </td>
+            
+        </tr>        
+
+    </table>
+    <script>
+    document.getElementById("idDisplay").value="0";
+    </script>
+
+</html>

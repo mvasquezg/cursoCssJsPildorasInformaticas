@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Eventos JQuery</title>
+    <link rel="stylesheet" href="../css/eventosJQuery.css">
+    <script src="../Jquery/jquery-1.11.1.js"></script>
+
+    <script>
+      
+        $(document).ready(
+            function(){
+                $("html").dblclick(
+                    function(){
+                        alert("has hecho doble click");
+                    }    
+                );
+
+                $("a").mouseover(
+                    function(){
+                        var mensaje="<p>Estas pasando el raton por encima del link </p>"
+                    
+                        $("#idPrincipal").append(mensaje);
+                    }      
+                );    
+                
+
+                $("#idEnviar").click(
+                    function(){
+                        $(this).val("Actualizar");
+                    }
+                );
+                
+
+                $("#idTextInfo").focus(
+                    function(){
+                        $(this).val("Ahora debes escribir aqui");
+                    }
+                );
+
+
+            
+            
+            
+            
+            }//end function anonima
+        );
+
+         
+            
+    </script>
+
+
+</head>
+
+    <body>
+        <div id="idPrincipal">
+            <h1>Introduccion a Eventos</h1>
+            <p>
+                <a href="#">un link</a>
+            </p>
+
+            <form action="#" method="GET">
+                <fieldset>
+                    <legend>
+                        Formulario
+                    </legend>
+
+                    <p>
+                        <input type="button" id="idEnviar" value="Enviar"/>
+                    </p>
+                    <p>
+                        <input type="text" id="idTextInfo"/>
+                    </p>
+
+                </fieldset>
+            </form>
+        </div>
+
+
+    </body>
+</html>

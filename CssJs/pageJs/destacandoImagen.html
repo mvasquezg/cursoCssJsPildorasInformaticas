@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Destacando Imagen</title>
+    <link rel="stylesheet" href="../css/destacandoImagen.css">
+    <script src="../Jquery/jquery-1.11.1.js"></script>
+
+    <script>
+      
+        $(document).ready(
+            function(){
+                
+                var arrayElementos=document.querySelectorAll("li");
+
+                for(var i=0; i<arrayElementos.length; i++){
+                    arrayElementos[i].addEventListener("mouseover", mostrarImagen, false);
+
+                    arrayElementos[i].addEventListener("mouseout", restaurarImagen, false);
+                }
+
+                
+            }
+        );
+
+        function mostrarImagen(e){
+            if(e.target==idItem01){
+                $("#idItem01").addClass("destacar");
+                $("img").attr("src", "../img/linux01.jpg");
+            }else if(e.target==idItem02){
+                $("#idItem02").addClass("destacar");
+                $("img").attr("src", "../img/linux02.jpg");
+            }else if(e.target==idItem03){
+                $("#idItem03").addClass("destacar");
+                $("img").attr("src", "../img/linux03.jpg");
+            }else if(e.target==idItem04){
+                $("#idItem04").addClass("destacar");
+                $("img").attr("src", "../img/linux04.jpg");
+            } 
+        }
+
+        function restaurarImagen(e){
+            if(e.target==idItem01){
+                $("#idItem01").removeClass("destacar");
+                $("img").removeAttr("src");
+            }else if(e.target==idItem02){
+                $("#idItem02").removeClass("destacar");
+                $("img").removeAttr("src");
+            }else if(e.target==idItem03){
+                $("#idItem03").removeClass("destacar");
+                $("img").removeAttr("src");
+            }else if(e.target==idItem04){
+                $("#idItem04").removeClass("destacar");
+                $("img").removeAttr("src");
+            }
+        }
+
+            
+    </script>
+
+
+</head>
+
+    <body>
+        <div id="idContedor01">
+            <h1>Destacando Imagenes</h1>
+
+            <ul>
+                <li id="idItem01">
+                    Imagen 1
+                </li>
+                <li id="idItem02">
+                    Imagen 2
+                </li>
+                <li id="idItem03">
+                    Imagen 3
+                </li>
+                <li id="idItem04">
+                    Imagen 4
+                </li>
+            </ul>
+        </div>
+        
+        <div id="idContedor02">
+            <img src=""/>
+        </div>
+    </body>
+</html>

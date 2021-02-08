@@ -1,0 +1,31 @@
+/*.contenedor{
+    background-color: #0f0;
+}*/
+
+
+#idBanner{
+    background-color: #f00;
+    width: 450px;
+    height: 300px;
+    position: absolute;
+    left: 400px;
+    top: 50px;
+    font-size: 36px;
+    text-align: center;
+}
+
+#img{
+    float: left;
+    margin: 15px;
+    width: 350px;
+    height: 200px;
+}
+
+#idImg01, #idImg02, #idImg03, #idImg04, #idImg05, #idImg06 {
+    float: left;
+    margin: 15px;
+    width: 350px;
+    height: 200px;
+    font-size: 36px;
+
+}

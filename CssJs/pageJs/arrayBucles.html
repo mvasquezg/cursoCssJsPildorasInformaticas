@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Array Bucles</title>
+
+    <style>
+        #idContenedor{
+            width: 25%;
+            background-color: #ffc;
+            margin: auto;
+            padding: 15px;
+        }
+    </style>
+
+    <script>
+        /*var arrayMeses=["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];        
+        var contador = 0;
+
+        while(contador<arrayMeses.length){
+            document.write(arrayMeses[contador] + " <br/>");
+            contador++;
+        }*/
+
+        var nombre, edad, poblacion;
+
+        /*nombre=prompt("introduce tu nombre: ");
+         while(!isNaN(nombre)){
+            nombre=prompt("introduce un nombre valido: ");
+         }*/ 
+         
+         do{
+            nombre=prompt("introduce un nombre valido: ");
+         }while(!isNaN(nombre));
+
+
+        /*edad=prompt("introduce tu edad: ");
+        while(edad<=0 || edad>105 || isNaN(edad)){
+            edad=prompt("introduce tu edadc correcta: ");
+        }*/
+        do{
+            edad=prompt("introduce tu edadc correcta: ");
+        }while(edad<=0 || edad>105 || isNaN(edad));
+        
+        /*poblacion=prompt("introduce tu poblacion: ");
+        while(!isNaN(poblacion)){
+            poblacion=prompt("introduce una pobalcion valido: ");
+         }*/
+         do{
+            poblacion=prompt("introduce una pobalcion valido: ");
+         }while(!isNaN(poblacion));
+
+    </script>
+</head>
+
+<body>
+    <div id="idContenedor">
+        <p>Nombre:
+            <script>
+                document.write(nombre);
+            </script>
+        </p>
+            
+        <p>Edad: 
+            <script>
+                document.write(edad);
+            </script> 
+        </p>
+        
+        <p>Poblacion: 
+            <script>
+                document.write(poblacion);
+            </script> 
+        </p>
+    </div>
+</body>
+</html>

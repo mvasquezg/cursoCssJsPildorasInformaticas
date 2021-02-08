@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Nocticas Jquery CSS</title>
+    <link rel="stylesheet" href="../css/noticiasCSSJQuery.css">
+    <script src="../Jquery/jquery-1.11.1.js"></script>
+
+    <script>
+        $(document).ready(
+            function(){
+                /*idAumenta01.addEventListener("click", aumentar, false);
+                idDisminuye01.addEventListener("click", disminuir, false);
+
+                idAumenta02.addEventListener("click", aumentar, false);
+                idDisminuye02.addEventListener("click", disminuir, false);
+
+                idAumenta03.addEventListener("click", aumentar, false);
+                idDisminuye03.addEventListener("click", disminuir, false)*/;
+
+                var arrayBotones=document.querySelectorAll("input");
+
+                for(var i=0; i<arrayBotones.length; i++){
+                    arrayBotones[i].addEventListener("click", aumentar, false);
+
+                    arrayBotones[i].addEventListener("click", disminuir, false);
+                }
+            }
+        );
+
+        function aumentar(e){
+            var zonaActuacion;
+
+            if(e.target == idAumenta01){
+                zonaActuacion="#idNoticia01"
+            }else if(e.target == idAumenta02){
+                zonaActuacion="#idNoticia02"
+            }else if(e.target == idAumenta03){
+                zonaActuacion="#idNoticia03"
+            }
+            
+            
+            var tamFuente = $(zonaActuacion).css("font-size");
+            
+            tamFuente=parseInt(tamFuente);
+
+            $(zonaActuacion).css("font-size", tamFuente*1.08);
+        }
+
+        function disminuir(e){
+            var zonaActuacion;
+
+            if(e.target == idDisminuye01){
+                zonaActuacion="#idNoticia01"
+            }else if(e.target == idDisminuye02){
+                zonaActuacion="#idNoticia02"
+            }else if(e.target == idDisminuye03){
+                zonaActuacion="#idNoticia03"
+            }
+
+
+            var tamFuente = $(zonaActuacion).css("font-size");
+            
+            tamFuente=parseInt(tamFuente);
+
+            $(zonaActuacion).css("font-size", tamFuente*0.95);
+                
+        }
+
+    </script>
+
+
+</head>
+
+<body>
+    <h1>Noticias</h1>
+
+    <div id="idNoticia01">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+        <table>
+            <tr>
+                <td style="text-align: left;">
+                    <input type="button" value="Aumentar" id="idAumenta01" />
+                </td>
+                <td style="text-align: right;">
+                    <input type="button" value="Disminuir" id="idDisminuye01" />
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+    <div id="idNoticia02">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+        <table>
+            <tr>
+                <td style="text-align: left;">
+                    <input type="button" value="Aumentar" id="idAumenta02" />
+                </td>
+                <td style="text-align: right;">
+                    <input type="button" value="Disminuir" id="idDisminuye02" />
+                </td>
+
+            </tr>
+        </table>
+    </div>
+
+    <div id="idNoticia03">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+        <table>
+            <tr>
+                <td style="text-align: left;">
+                    <input type="button" value="Aumentar" id="idAumenta03" />
+                </td>
+                <td style="text-align: right;">
+                    <input type="button" value="Disminuir" id="idDisminuye03" />
+                </td>
+
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

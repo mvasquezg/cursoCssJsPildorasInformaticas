@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8"/>
+  <title>Calculadora Basica</title>
+</head>
+
+<script>
+  var num1=prompt("Introduce el primer numero: ");
+  var num2=prompt("Introduce el segundo numero: ");
+  //alert(typeof(num1)); retresa el tipo de dato.
+  
+  if( !(isNaN(num1)) && !(isNaN(num2))){
+    var operacion=prompt("Introduce la operacion a realizar \nsuma (+)\nresta (-)\nMultiplicación (*)\nDivisión (/) ").toLowerCase();
+  
+    if(operacion=="suma"){
+      alert(parseInt(num1) + parseInt(num2));
+    }else if(operacion=="resta"){
+      alert(parseInt(num1) - parseInt(num2));
+    }else if(operacion=="multiplicación" || operacion=="multiplicacion"){
+      alert(parseInt(num1) * parseInt(num2));
+    }else if(operacion=="división" || operacion=="division"){
+      alert(parseInt(num1) / parseInt(num2));
+    }else{
+      alert("Operacion no contemplada");
+    }
+  }else{
+    /*alert("No se pueden operar los numeros");*/
+    if(typeof(num1)=="string" || typeof(num2)=="string"){
+      alert("Has introducido valores de texto.");
+    }else{
+      alert("Ha ocurrido un error no identificado.");
+    }
+  }
+
+  
+
+</script>
+
+<body id="idBody">
+
+  
+</body>
+
+</html>

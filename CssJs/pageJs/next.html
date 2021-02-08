@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Next y Bind JQuery</title>
+    <link rel="stylesheet" href="../css/nextBind.css">
+    <script src="../Jquery/jquery-3.5.1.js"></script>
+
+    <script>
+       $(document).ready(
+            function(){
+               $(".respuesta").hide();
+
+               $(".principal h3").click( 
+                    function(){
+                        /*$(this).toggleClass("cerrar").next(".respuesta").fadeIn(1000);
+                        $(this).toggleClass("cerrar").next(".respuesta").toggle();
+                        $(this).addClass("cerrar");
+                        $(this).removeClass("cerrar");
+
+                        */
+
+                        $(this).next(".respuesta").fadeToggle();
+
+                        $(this).toggleClass("cerrar");
+                        
+                        
+                        
+                    }
+               
+               );
+               
+            }//end function anonima
+        );//end documenteReady      
+    </script>
+
+
+</head>
+
+    <body>
+        <div>
+            <p>
+                <img src="../img/linux01.jpg" />
+            </p>
+                <h1 class="titulo">Pildoras informaticas Preguntas frecuentes</h1>
+        </div>
+
+        <div class="principal">
+            <h2>Preguntas frecuentes</h2>
+                
+                  <h3>Pregunta 1?</h3>
+                  <div class="respuesta">
+                        <p>
+                            Respuesta= sdashdhaslkdhkashkdhaskdhkaskhdhkashkda
+                        </p>
+                  </div>
+
+                  <h3>Pregunta 2?</h3>
+                  <div class="respuesta">
+                        <p>
+                            Respuesta= sdashdhaslkdhkashkdhaskdhkaskhdhkashkda
+                        </p>
+                  </div>
+
+                  <h3>Pregunta 3?</h3>
+                  <div class="respuesta">
+                        <p>
+                            Respuesta= sdashdhaslkdhkashkdhaskdhkaskhdhkashkda
+                        </p>
+                  </div>
+                  <h3>Pregunta 4?</h3>
+                  <div class="respuesta">
+                        <p>
+                            Respuesta= sdashdhaslkdhkashkdhaskdhkaskhdhkashkda
+                        </p>
+                  </div>
+                  
+                  <h3>Pregunta 5?</h3>
+                  <div class="respuesta">
+                        <p>
+                            Respuesta= sdashdhaslkdhkashkdhaskdhkaskhdhkashkda
+                        </p>
+                  </div>
+
+                  <h3>Pregunta 6?</h3>
+                  <div class="respuesta">
+                        <p>
+                            Respuesta= sdashdhaslkdhkashkdhaskdhkaskhdhkashkda
+                        </p>
+                  </div>
+
+                  <h3>Pregunta 7?</h3>
+                  <div class="respuesta">
+                        <p>
+                            Respuesta= sdashdhaslkdhkashkdhaskdhkaskhdhkashkda
+                        </p>
+                  </div>
+
+                  <h3>Pregunta 8?</h3>
+                  <div class="respuesta">
+                        <p>
+                            Respuesta= sdashdhaslkdhkashkdhaskdhkaskhdhkashkda
+                        </p>
+                  </div>
+
+                  <h3>Pregunta 9?</h3>
+                  <div class="respuesta">
+                        <p>
+                            Respuesta= sdashdhaslkdhkashkdhaskdhkaskhdhkashkda
+                        </p>
+                  </div>
+
+                  <h3>Pregunta 10?</h3>
+                  <div class="respuesta">
+                        <p>
+                            Respuesta= sdashdhaslkdhkashkdhaskdhkaskhdhkashkda
+                        </p>
+                  </div>
+
+        </div><!--fin div principal-->
+        
+        <!--          
+                  
+       -->    
+    </body>
+</html>

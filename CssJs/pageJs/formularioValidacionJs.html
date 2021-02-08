@@ -1,0 +1,79 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+  <title>Formularios</title>
+  <link href="./css/formulario.css" rel="stylesheet" type="text/css" />
+
+  <style type="text/css">
+
+
+
+  </style>
+</head>
+
+<body id="idBody">
+  <form id="idFormPrueba" name="formPrueba" method="post" action="">
+    <p>
+      <label >Nombre </label>
+      <input type="text" name="nombre" id="idNombre" />
+    </p>
+    
+    <p>
+      <label >Primer Apellido </label>
+      <input type="text" name="primerApellido" id="idPrimerApellido" />
+    </p>
+    <p>
+      <label >Segundo Apellido </label>
+      <input type="text" name="segundoApellido" id="idSegundoApellido" />
+    </p>
+
+    <p>
+      <label >Edad </label>
+      <input type="text" name="edad" id="idEdad" />
+    </p>
+
+    <p>
+      <label >Curp </label>
+      <input type="text" name="curp" id="idCurp" />
+    </p>
+   
+    <p>
+      <input type="submit" name="enviar" id="idEnviar" value="Enviar" />
+    </p>
+    <p>
+      <input type="submit" name="restablecer" id="idRestablecer" value="Restablecer" />
+    </p>
+  </form>
+  
+  <script>
+      var idBody=document.getElementById("idBody");
+      var colorWeb=prompt("Introduce un color de fondo Azul/Verde/Rojo").toLowerCase();
+
+      /*if(colorWeb=="azul"){
+          idBody.style.backgroundColor="blue";
+      }else if(colorWeb=="rojo"){
+        idBody.style.backgroundColor="red";
+      }else if(colorWeb=="verde"){
+        idBody.style.backgroundColor="green"
+      }else{
+        alert("Este color no esta contemplado.");
+      }*/
+
+      if(colorWeb!="azul" && colorWeb!="rojo" && colorWeb!="verde"){
+        alert("Este color no esta contemplado.");
+      }else if(colorWeb=="azul"){
+          idBody.style.backgroundColor="blue";
+      }else if(colorWeb=="rojo"){
+        idBody.style.backgroundColor="red";
+      }else {
+        idBody.style.backgroundColor="green"
+      }
+
+  </script>
+
+</body>
+
+</html>

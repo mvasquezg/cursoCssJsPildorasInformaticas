@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>each y Funciones anonimas</title>
+    <link rel="stylesheet" href="../css/eachFuncionAnonima.css">
+    <script src="../Jquery/jquery-1.11.1.js"></script>
+
+    <script>
+      
+        $(document).ready(
+            function(){
+                
+             //idBtnAccion.addEventListener("click", cambiarImagen, false);   
+             $(document).ready(
+                 function(){
+                    
+                    $("a[href^='http://']").each(
+                         function(){
+                             var linkExterno = $(this).attr("href");
+                         
+                            $("#idLink").append("<li>" + linkExterno + "</li>");
+                         
+                         }
+                     );
+                 }
+             );   
+
+
+            }
+        );
+
+         /*function cambiarImagen(){
+            // $("img").fadeOut(1000).fadeIn(1000).width(250);
+
+            $("img").each(
+                function(){
+                    $(this).fadeOut(1000).fadeIn(1000).width(250);
+                }
+
+            );
+         }*/   
+        
+            
+    </script>
+
+
+</head>
+
+    <body>
+        <!--<div id="idContedor01">
+            <img src="../img/linux.jpg"/>
+            <img src="../img/linux01.jpg"/>
+            <img src="../img/linux02.jpg"/>
+            <img src="../img/linux03.jpg"/>
+        </div>
+        
+        <div id="idBoton">
+            <input type="button" id="idBtnAccion" value="Accion"/>
+        </div>-->
+
+        <h1>
+            Utilizando la funcion each
+        </h1>
+
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. <a href="http://www.google.com">ir a google</a> has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.  
+        </p>
+
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. <a href="http://www.pildorasinformaticas.com">ir a pildoras</a> has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.  
+        </p>
+
+        <div id="idUltimo">
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. <a href="http://www.youtube.com">ir a youtube</a> has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.  
+            </p>
+    
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. <a href="http://www.youtube.com">ir a youtube</a> has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.  
+            </p>
+    
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. <a href="http://www.youtube.com">ir a youtube</a> has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.  
+            </p>
+        </div>
+
+        <div id="idLink">
+            <h2>Links Utilizados</h2>
+        </div>
+        
+
+
+    </body>
+</html>

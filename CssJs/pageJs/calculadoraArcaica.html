@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora Arcaica</title>
+    
+    <script>
+
+        function sumar(num1, num2){
+            alert("La suma es: "+(num1+num2));
+        }   
+
+        function restar(num1, num2){
+            alert("La resta es: "+(num1-num2));
+        }   
+
+        function multiplicar(num1, num2){
+            alert("La multiplicacion es: "+(num1*num2));
+        }   
+
+        function dividir(num1, num2){
+            alert("La division es: "+(num1/num2));
+        }   
+
+        var operacion = prompt("Que operacion deseas realizar? \n1.-Sumar\n2.-Restar\n3.Multiplicar\n4.-Dividir").toLowerCase();
+        var num1=parseInt(prompt("Ingresa el primer numero: "));
+        var num2=parseInt(prompt("Ingresa el segundo numero: "));
+
+        if(operacion=="sumar"){
+            sumar(num1, num2);
+        }else if(operacion=="restar"){
+            restar(num1, num2);
+        }else if(operacion=="multiplicar"){
+            multiplicar(num1, num2);
+        }else if(operacion=="dividir"){
+            dividir(num1, num2);
+        }else{
+            alert("No se reconoce la operacion");
+        }
+
+       
+    </script>
+</head>
+
+<body >
+
+</body>
+
+
+</html>

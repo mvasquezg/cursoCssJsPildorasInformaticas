@@ -1,0 +1,15 @@
+p{
+    color: #f90;
+    margin-left: 50px;
+    padding-left: 20px;
+    border-left: solid 22px #930;
+}
+
+.estiloPagina{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: #960;
+    width: 960;
+    margin: 0 auto;
+}/*end */
+

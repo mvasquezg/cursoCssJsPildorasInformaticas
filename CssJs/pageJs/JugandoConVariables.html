@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jugando con las variables</title>
+    <link rel="stylesheet" href="../css/jugandoConVariables.css">
+
+    <script>
+        
+        var nombrePersona=prompt("Ingresa tu nombre");
+        var primerApellido=prompt("Ingresa tu nombre");
+        var edad = prompt("Ingresa tu edad");
+        var restando = prompt("Cuanto anhos deseas quitarte?");
+
+        edad-=restando;
+
+            
+     </script>
+
+
+</head>
+
+<body>
+
+    <div class="contendor">
+        <div class="header">
+            <p class="logo">Variables JS</p>
+        </div>
+        <div class="contenido">
+            <div class="principal">
+                <h1>Jugando con las variables</h1>
+                <script>
+                   /* var nombrePersona="Miguel";
+                    var primerApellido="Vasquez";*/
+
+                    document.write("<p>");
+                    document.write(nombrePersona+" "+primerApellido+" <br/>"+ 
+                    " Te gustaria tener: "+ edad+ "Anhos");
+                    document.write("</p>")    
+                </script>
+            </div>
+        </div>    
+    </div>
+
+    
+
+
+
+
+</body>
+
+</html>

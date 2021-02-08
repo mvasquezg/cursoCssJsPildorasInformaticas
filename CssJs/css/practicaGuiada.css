@@ -1,0 +1,52 @@
+
+    h1, h2, h3 {
+        color: #393;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        border-top: 2px;
+        border-top: solid;
+        border-top-color: #00ab;
+        padding-top: 15px;
+        padding-left: 100px;
+        
+    }
+    
+    p{
+        color: #666;
+        font-size: 1em;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: justify;
+        margin-left: 100px;
+        margin-right: 15px;
+    }
+
+    .atencion{
+        color: #000;
+        border: 2px dashed #633;
+        background-color: #ff9;
+        margin-top: 25px;
+        margin-bottom: 35px;
+        padding: 20px;
+    }
+
+    .atencion strong{
+        color: #f60;
+    }
+
+    #idCuerpo{
+        background-color: #ff9;
+        
+    }
+
+    #idCentro{
+        background-color: #FFF;
+        background-position: center top;
+        width: 760px;
+        margin: 0 auto;
+        padding-bottom: 10px;
+    }/*S*/
+
+    h1+p{ /*Modificador hermano*/
+        color: #f60;
+        font-size: 1.2em;
+        line-height: 140%;
+    }

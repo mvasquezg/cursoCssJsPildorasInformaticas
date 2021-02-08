@@ -1,0 +1,139 @@
+/*reset*/
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, variable, address, form, fieldset, strong, blockquote{
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    font-weight: normal;
+}
+
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td, th, caption{
+    font-weight: normal;
+    text-align: left;
+}
+
+img, fieldset{
+    border: 0;
+}
+
+ol{
+    margin-left: 1.4em;
+    list-style: decimal;
+}
+
+ul{
+    margin-left: 1.4em;
+    list-style: square;
+}
+
+q:before, q:after {
+    content: '';
+}
+/*finaliza reset*/
+
+body{
+    background-image: url(../img/fondo_web.png);
+    background-repeat: repeat-x;
+}
+
+
+#idPrincipal{
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+}
+
+#idContenido{
+    float: right;
+    width: 565px;
+    margin-right: 15px;
+    padding-top: 25px;
+}
+
+#idAnuncio {
+    margin-right: 600px;
+    margin-left: 20px;
+}
+
+h1{
+    font: normal 48px Georgia, 'Times New Roman', Times, serif;
+    text-align: right;
+    color: #272D32;
+}
+
+#idPrincipal h2{
+    font: 24px Tahoma, Geneva, sans-serif;
+    margin-bottom: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#principal p{
+    font: 14px 'Times New Roman', Times, serif;
+    color: #323A3F;
+    margin-bottom: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#idAnuncio h2{
+    font: italic bold normal 20px 'Times New Roman', Times, serif;
+    text-align: center;
+    color: #323A3F;
+    text-transform: uppercase;
+
+}
+
+#idAnuncio ul{
+    font:  14px Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#idPrincipal{
+    background-color: #fff;
+    background-image: url(../img/mano.jpg);
+    background-repeat: no-repeat;
+}
+
+#idBanner{
+    margin-top: 45px;
+}
+
+#idAnuncio{
+    margin-top: 100px;
+    background-image: url(../img/perg_medio.jpg);
+    background-repeat: repeat-y;
+    background-position: center top;
+}
+
+#idContenido h2{
+    background-image: url(../img/subrayado.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 15px;
+}
+
+#idAnuncio li{
+    list-style: none;
+    background-image: url(../img/vineta.png);
+    background-repeat: no-repeat;
+    padding-left: 25px;
+    background-position: 0 4px;
+    margin-left: 30px;
+    margin-right: 40px;
+}
+
+#idAnuncio h2{
+    background: url(../img/perg-sup.jpg) no-repeat center top;
+    padding-top: 70px;
+
+}
+
+#idAnuncio .piePaginaUl{
+    background: url(../img/perg_inf.jpg) no-repeat center bottom;
+    padding-bottom: 65px;
+
+    
+}
